@@ -20,7 +20,7 @@ it will bring up all components. [Backend](backend_server) is configured to incl
 
 and based on this value will chose coresponding append action for `test-header`.
 
-### Desired behavior:
+### Expected behavior:
 
 ```sh
 curl -v -H "action: add-if-absent" localhost:8081
