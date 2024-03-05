@@ -7,6 +7,8 @@ This repository contains simple scenario consisting of:
 
 This setup tests behavior of [header append actions](https://www.envoyproxy.io/docs/envoy/v1.29.1/api-v3/config/core/v3/base.proto#envoy-v3-api-enum-config-core-v3-headervalueoption-headerappendaction) which is done in external authorization service to the replay to client. `ADD_IF_ABSENT` and `APPEND_IF_EXISTS_OR_ADD` instead of only adding header when it is missing from backend response or append to existing value, it always set header defined in `ResponseHeadersToAdd` list.
 
+Issue reported here https://github.com/envoyproxy/envoy/issues/32657 .
+
 ### How to reproduce
 
 Clone this repository and run:
